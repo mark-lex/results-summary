@@ -9,6 +9,7 @@
 body {
     font-family: 'Outfit', sans-serif;
     color: #1f3251;
+    background-color: #d5e1ef;
 }
 
 .box {
@@ -39,29 +40,32 @@ body {
     align-items: center;
     justify-content: flex-start;
     width: 350px;
+    padding: 10px 0;
 }
 
 .box h1 {
-    line-height: 1.5rem;
+    font-size: 1.6rem;
     text-align: center;
     font-weight: 600;
-    padding: 10px;
+    line-height: 1.9rem;
+    padding: 5px 10px;
 }
 
 .box p {
+    font-size: 1.1rem;
     text-align: center;
+    font-weight: 300;
+    line-height: 1.3rem;
+    padding: 10px 15px;
     color: #7b879d;
-    line-height: 1.2rem;
-    padding: 15px;
-    font-weight: 400;
 }
 
 footer {
+    width: 100%;
     background-color: #1f3251;
+    text-align: center;
     color: #ffffff;
     padding: 20px;
-    text-align: center;
-    
 }
 
 footer p {
@@ -78,4 +82,38 @@ footer a {
 footer a:hover {
     color: #7b879d;
     cursor: pointer;
+}
+
+/* MEDIAQUERY */
+
+@media screen and (max-width: 375px) {
+
+    .box {
+        border-radius: 16px;
+        width: 300px;
+        height: 100%;
+        margin: 50px auto;
+    }
+
+    .box img {
+        width: 250px;
+        border-radius: 8px;
+        margin: 15px;
+    }
+
+    .box .content {
+        width: 250px;
+        padding: 10px 0;
+    }
+
+    .box h1 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        line-height: 1.6rem;
+        padding: 5px 0 
+    }
+
+    .box p {
+        padding: 10px 0;
+    }
 }
